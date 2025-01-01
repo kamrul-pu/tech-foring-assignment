@@ -23,6 +23,7 @@ urlpatterns = [
     path("api/token/verify", TokenVerifyView.as_view(), name="token_verify"),
     # include user endpoints
     path("api/users", include("core.urls.user"), name="user-urls"),
+    path("api", include("projects.urls.urls")),
 ]
 
 if settings.DEBUG:
