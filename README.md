@@ -20,4 +20,16 @@ Clone the project repository from GitHub (or wherever it is hosted).
 
 ```bash
 git clone https://github.com/kamrul-pu/tech-foring-assignment
-cd <project-directory>
+cd tech-foring-assignment
+
+create a virtual environment and activate the virtual environment
+
+and then install required packages
+pip install -r requiremtns/developments.txt
+## Create superuser
+python app/manage.py createsuperuser
+
+then start the project by command: python app/manage.py runserver
+
+## API DOCS
+127.0.0.1:8000/api/docs
